@@ -19,7 +19,7 @@ spec:
         env:
         - name: POSTGRES_PASSWORD
           value: "pass"
-        - name: POSTGRES_USERNAME
+        - name: POSTGRES_USER
           value: "user"
         - name: POSTGRES_DB
           value: "kubenews"  
@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: edsonandrade/kube-news:v1
+        image: edsontecno/kube-news:v1
         ports:
         - containerPort: 5432
         env:
