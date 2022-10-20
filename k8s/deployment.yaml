@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: edsontecno/kube-news:v1
+        image: edsontecno/kube-news:{{TAG}}
         ports:
         - containerPort: 5432
         env:
